@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MD Travel Report · 2–6 Nov 2026</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#eef2fb;--card:#fff;--tx:#18202f;--mut:#5f6b7f;--line:#dfe5f1;--chip:#f1f4fb}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1020;--card:#171b30;--tx:#eef1fa;--mut:#a3adc4;--line:#2a3050;--chip:#20253f}}
+:root[data-theme="dark"]{--bg:#0d1020;--card:#171b30;--tx:#eef1fa;--mut:#a3adc4;--line:#2a3050;--chip:#20253f}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:14px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1000px;margin:0 auto;padding:12px}
+.head{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap;color:#fff;border-radius:16px;padding:14px 18px;background:linear-gradient(120deg,#0ea5a4,#2563eb 45%,#7c3aed 75%,#db2777)}
+.head h1{margin:0;font-size:21px}.head .s{opacity:.9;font-size:13px}
+.clk{text-align:right;font-variant-numeric:tabular-nums}.clk b{font-size:24px;display:block;line-height:1.1}
+.hero{margin:10px 0;border-radius:16px;padding:14px 18px;color:#fff;display:grid;grid-template-columns:1fr auto;gap:10px;align-items:center;background:linear-gradient(120deg,#1e3a8a,#4f46e5)}
+.hero.live{background:linear-gradient(120deg,#ea580c,#db2777)}.hero.done{background:linear-gradient(120deg,#059669,#0ea5a4)}
+.hero .l{font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.85}
+.hero .b{font-size:20px;font-weight:800}.hero .u{opacity:.9;font-size:13px}
+.hero .c{text-align:right;font-variant-numeric:tabular-nums}.hero .c b{font-size:32px;display:block;line-height:1.1}
+.tl{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 12px;margin:10px 0}
+.track{position:relative;display:flex;height:22px;border-radius:99px;overflow:hidden;background:var(--chip)}
+.track i{display:block;height:100%}
+.pin{position:absolute;top:-4px;bottom:-4px;width:4px;background:#111;border:2px solid #fff;border-radius:4px;transition:left .5s}
+.tlt{display:flex;justify-content:space-between;font-size:11px;color:var(--mut);margin-top:4px}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+.leg{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.leg.done{opacity:.7}
+.lh{display:flex;justify-content:space-between;align-items:center;gap:6px;padding:8px 12px;color:#fff;font-weight:700}
+.bd{font-size:11px;font-weight:700;padding:2px 9px;border-radius:99px;background:rgba(255,255,255,.25);white-space:nowrap}
+.lb{padding:10px 12px}
+.rt{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:6px}
+.rt .t{font-size:24px;font-weight:800;font-variant-numeric:tabular-nums}.rt .r{text-align:right}
+.rt .m{text-align:center;font-size:11px;color:var(--mut)}
+.sm{font-size:12px;color:var(--mut)}
+.pb{height:7px;border-radius:99px;background:var(--chip);margin:7px 0;overflow:hidden}.pb i{display:block;height:100%;border-radius:99px;transition:width .5s}
+.cd{font-weight:700;font-variant-numeric:tabular-nums}
+.ch{display:flex;flex-wrap:wrap;gap:5px;margin-top:6px}
+.ch span{background:var(--chip);border-radius:8px;padding:2px 8px;font-size:12px}
+.ch b{color:var(--mut);font-weight:600;margin-right:3px}
+.hl{grid-column:1/-1;text-align:center;font-size:12px;color:var(--mut);padding:0 4px}
+.hl.cur{color:#ea580c;font-weight:700}
+.ft{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.bx{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:10px 12px;font-size:12.5px}
+.bx h3{margin:0 0 4px;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--mut)}
+.bx.w{border-left:5px solid #f59e0b}
+.bx ul{margin:0;padding-left:16px}.bx li{margin:2px 0}
+.fr{display:flex;justify-content:space-between;border-bottom:1px dashed var(--line);padding:2px 0}
+.tot{font-weight:800;border:0;font-size:14px}
+.tools{margin-top:8px;text-align:center;font-size:11.5px;color:var(--mut)}
+.tools input,.tools button{font:inherit;padding:3px 7px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--tx)}
+.vt{margin-top:8px;width:100%;border:0;border-radius:10px;padding:8px;font:inherit;font-weight:700;color:#fff;cursor:pointer;background:var(--vc)}
+.md{position:fixed;inset:0;z-index:50;background:rgba(8,10,22,.82);display:none;flex-direction:column;padding:calc(10px + env(safe-area-inset-top,0px)) 10px calc(10px + env(safe-area-inset-bottom,0px))}
+.md.on{display:flex}
+.mh{display:flex;justify-content:space-between;align-items:center;gap:8px;color:#fff;margin-bottom:8px}
+.mh b{font-size:16px}.mh button{border:0;border-radius:10px;padding:7px 14px;font:inherit;font-weight:700;cursor:pointer;background:#fff;color:#111}
+.mb{flex:1;overflow:auto;background:#fff;border-radius:12px;text-align:center}
+.mb img{width:100%;max-width:820px;display:inline-block;cursor:zoom-in}.mb img.z{width:200%;max-width:none;cursor:zoom-out}
+.mi{color:#fff;font-size:12px;margin-top:6px;text-align:center;opacity:.85}
+@media (max-width:700px){.grid,.ft{grid-template-columns:1fr}.hero{grid-template-columns:1fr}.hero .c{text-align:left}}
+@media print{@page{size:A4;margin:8mm}body{background:#fff;font-size:11px}.tools{display:none}.wrap{padding:0}.rt .t{font-size:19px}*{-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+</style></head><body><div class="wrap">
+<div class="head"><div><h1>🧳 MD Travel Report</h1><div class="s">Mr. RR Sathiyamurthi · Erode → Chennai → Delhi → Coimbatore · 2–6 Nov 2026</div></div>
+<div class="clk"><span class="s">Your device time</span><b id="clk">--:--:--</b><span class="s" id="dt"></span></div></div>
+<div id="hero"></div>
+<div class="tl"><div class="track" id="track"></div><div class="tlt"><span>Sun 2 Nov · 21:45</span><span>Trip timeline (IST)</span><span>Fri 6 Nov · 19:55</span></div></div>
+<div class="grid" id="grid"></div>
+<div class="ft"><div class="bx w"><h3>⚠ Points to verify</h3><ul>
+<li><b>Two Erode → Chennai trains</b> are booked (2 Nov 2A and 3 Nov 1A, both 21:45). Confirm which is needed; cancel the other.</li>
+<li><b>Long halts:</b> ~26 h in Chennai and ~31 h in Delhi (with 3 Nov train). Hotel and cabs are not covered by these tickets.</li>
+<li>Flight check-in closes 60 min before departure. Original photo ID needed for train and flight.</li>
+<li>Train timings may change: re-check on 139 on the day.</li></ul></div>
+<div class="bx"><h3>💰 Fare summary</h3><div id="fare"></div></div></div>
+<div class="tools">Preview a time (IST): <input type="datetime-local" id="sim"> <button id="go">Preview</button> <button id="rst">Live</button> · <span id="mode"></span> · Status updates every second from your device clock.</div>
+</div>
+<div class="md" id="md"><div class="mh"><b id="mt"></b><button id="mc">✕ Close</button></div><div class="mb"><img id="mi" alt="Ticket"></div><div class="mi" id="mn">Tap the ticket to zoom in or out · scroll to move around</div></div>
+<script>
+var TK=[];
+var legs=[
+{m:"t",tc:"Chennai",ti:"Erode → Chennai",dep:"2026-11-02T21:45:00+05:30",arr:"2026-11-03T04:25:00+05:30",fr:"Erode Jn (ED)",to:"MGR Chennai Central (MAS)",car:"22650 Yercaud SF Exp",cls:"2nd AC (2A)",seat:"HA1 / 11 · Side Lower",pnr:"4700788790",fare:1050.85,rd:120,cut:30,col:"#0ea5a4",col2:"#14b8a6",tip:"Reach station by 21:15"},
+{m:"t",tc:"Chennai",ti:"Erode → Chennai",dep:"2026-11-03T21:45:00+05:30",arr:"2026-11-04T04:25:00+05:30",fr:"Erode Jn (ED)",to:"MGR Chennai Central (MAS)",car:"22650 Yercaud SF Exp",cls:"1st AC (1A)",seat:"CNF (at charting)",pnr:"4800788452",fare:1715.85,rd:120,cut:30,col:"#7c3aed",col2:"#a855f7",tip:"Reach station by 21:15"},
+{m:"f",tc:"Delhi",ti:"Chennai → New Delhi",dep:"2026-11-05T06:55:00+05:30",arr:"2026-11-05T09:45:00+05:30",fr:"Chennai MAA · T4",to:"Delhi DEL · T3",car:"Air India AI-2832",cls:"Economy",seat:"9A",pnr:"58HTKV",fare:13270,rd:180,cut:60,col:"#f97316",col2:"#fb923c",tip:"Check-in closes 05:55 · 15 kg + 7 kg"},
+{m:"f",tc:"Coimbatore",ti:"New Delhi → Coimbatore",dep:"2026-11-06T17:00:00+05:30",arr:"2026-11-06T19:55:00+05:30",fr:"Delhi DEL · T2",to:"Coimbatore CJB",car:"IndiGo 6E-2346",cls:"Economy",seat:"3D",pnr:"PBMD8J",fare:15805,rd:180,cut:60,col:"#2563eb",col2:"#3b82f6",tip:"Check-in closes 16:00 · 15 kg + 7 kg"}
+];
+legs.forEach(function(l){l.d=+new Date(l.dep);l.a=+new Date(l.arr)});
+var IST="Asia/Kolkata",sim=null;
+function N(){return sim!==null?sim:Date.now()}
+function F(ms,o){return new Intl.DateTimeFormat("en-IN",Object.assign({timeZone:IST},o)).format(ms)}
+function tm(x){return F(x,{hour:"2-digit",minute:"2-digit",hour12:false})}
+function dy(x){return F(x,{weekday:"short",day:"2-digit",month:"short"})}
+function dur(ms,s){if(ms<0)ms=0;var t=Math.floor(ms/1000),d=Math.floor(t/86400),h=Math.floor(t%86400/3600),m=Math.floor(t%3600/60),x=t%60;return(d?d+"d ":"")+(d||h?h+"h ":"")+m+"m"+(s?" "+("0"+x).slice(-2)+"s":"")}
+function ph(l,n){if(n>=l.a)return["done","✔ Completed"];if(n>=l.d)return["live",l.m=="f"?"✈ In flight":"🚆 In transit"];var m=(l.d-n)/6e4;if(m<=l.cut)return["u",l.m=="f"?"Check-in closed · Boarding":"Boarding now"];if(m<=l.rd)return["s","Get ready · report now"];return["up","Scheduled"]}
+function hero(n){var i,l;
+ if(n<legs[0].d)return{c:"",lab:"Trip status",big:"Trip not started · MD is at Erode",sub:"Next: "+legs[0].ti+" · "+legs[0].car,cl:"Departs in",cd:legs[0].d-n};
+ for(i=0;i<4;i++){l=legs[i];if(n>=l.d&&n<l.a)return{c:"live",lab:"Live now",big:(l.m=="f"?"✈ ":"🚆 ")+l.ti,sub:l.car+" · "+l.cls+" · Seat "+l.seat.split(" · ")[0],cl:"Arrives in",cd:l.a-n}}
+ for(i=0;i<3;i++)if(n>=legs[i].a&&n<legs[i+1].d){var p=legs[i],q=legs[i+1];return{c:"",lab:"Halt",big:"📍 At "+p.tc,sub:"Next: "+q.ti+" · "+q.car+" · "+dy(q.d)+" "+tm(q.d),cl:"Next departure in",cd:q.d-n}}
+ return{c:"done",lab:"Trip complete",big:"✔ Reached Coimbatore",sub:"All 4 journeys completed",cl:"",cd:0}}
+function render(){var n=N(),h=hero(n),t0=legs[0].d,t1=legs[3].a,T=t1-t0;
+ document.getElementById("hero").innerHTML='<div class="hero '+h.c+'"><div><div class="l">'+h.lab+'</div><div class="b">'+h.big+'</div><div class="u">'+h.sub+'</div></div>'+(h.cl?'<div class="c"><span class="l">'+h.cl+'</span><b>'+dur(h.cd,true)+'</b></div>':'')+'</div>';
+ var tr="",pos=0;legs.forEach(function(l,i){if(i)tr+='<i style="width:'+(l.d-legs[i-1].a)/T*100+'%;background:var(--line)"></i>';tr+='<i style="width:'+(l.a-l.d)/T*100+'%;background:linear-gradient(90deg,'+l.col+','+l.col2+')"></i>'});
+ pos=Math.min(1,Math.max(0,(n-t0)/T))*100;
+ document.getElementById("track").innerHTML=tr+'<span class="pin" style="left:calc('+pos+'% - 4px)"></span>';
+ var g="";legs.forEach(function(l,i){var p=ph(l,n),pg=Math.min(1,Math.max(0,(n-l.d)/(l.a-l.d)));
+  g+='<div class="leg '+(p[0]=="done"?"done":"")+'"><div class="lh" style="background:linear-gradient(90deg,'+l.col+','+l.col2+')"><span>'+(l.m=="f"?"✈":"🚆")+' Leg '+(i+1)+' · '+l.ti+'</span><span class="bd">'+p[1]+'</span></div><div class="lb">'+
+  '<div class="rt"><div><div class="t">'+tm(l.d)+'</div><div class="sm">'+dy(l.d)+'</div></div><div class="m">'+dur(l.a-l.d,false)+'<br>━━▶</div><div class="r"><div class="t">'+tm(l.a)+'</div><div class="sm">'+dy(l.a)+'</div></div></div>'+
+  '<div class="sm">'+l.fr+' → '+l.to+'</div><div class="pb"><i style="width:'+Math.round(pg*100)+'%;background:'+l.col+'"></i></div>'+
+  (p[0]=="done"?'<div class="cd" style="color:#059669">Completed</div>':'<div class="cd" style="color:'+l.col+'">'+(p[0]=="live"?"Arrives in "+dur(l.a-n,true):"Departs in "+dur(l.d-n,true))+'</div>')+
+  '<div class="ch"><span><b>Carrier</b>'+l.car+'</span><span><b>Class</b>'+l.cls+'</span><span><b>Seat</b>'+l.seat+'</span><span><b>PNR</b>'+l.pnr+'</span><span><b>Fare</b>₹'+l.fare.toLocaleString("en-IN")+'</span></div><div class="sm" style="margin-top:5px">ℹ '+l.tip+'</div></div></div>';
+  if(i==1||i==0||i==2){var q=legs[i+1],c=n>=l.a&&n<q.d;if(i==1||i==2||i==0)g+=(i==0||i==2)?'':'' }
+ });
+ var hs=[];for(var i=0;i<3;i++){var c=n>=legs[i].a&&n<legs[i+1].d;hs.push('<span class="'+(c?"cur":"")+'">'+(c?"📍 ":"")+"Halt at "+legs[i].tc+": "+dur(legs[i+1].d-legs[i].a,false)+(c?" · MD is here now":"")+'</span>')}
+ document.getElementById("grid").innerHTML=g+'<div class="hl" style="grid-column:1/-1;display:flex;justify-content:space-around;flex-wrap:wrap;gap:6px">'+hs.map(function(x){return x.replace('<span class="cur"','<span class="hl cur" ').replace('<span class="">','<span>')}).join("")+'</div>';
+ var d=new Date(n);document.getElementById("clk").textContent=d.toLocaleTimeString("en-IN",{hour12:false});
+ document.getElementById("dt").textContent=d.toLocaleDateString("en-IN",{weekday:"short",day:"2-digit",month:"short",year:"numeric"})+" · "+Intl.DateTimeFormat().resolvedOptions().timeZone;
+ document.getElementById("mode").textContent=sim!==null?"Preview mode":"Live"}
+var tot=0,fr="";legs.forEach(function(l){tot+=l.fare;fr+='<div class="fr"><span>'+(l.m=="f"?"✈ ":"🚆 ")+l.ti+" ("+F(l.d,{day:"2-digit",month:"short"})+")</span><span>₹"+l.fare.toLocaleString("en-IN",{minimumFractionDigits:2})+"</span></div>"});
+fr+='<div class="fr tot"><span>Total</span><span>₹'+tot.toLocaleString("en-IN",{minimumFractionDigits:2})+"</span></div>";document.getElementById("fare").innerHTML=fr;
+document.getElementById("go").onclick=function(){var v=document.getElementById("sim").value;if(v){sim=+new Date(v+":00+05:30");render()}};
+document.getElementById("rst").onclick=function(){sim=null;render()};
+function openT(i){var l=legs[i],im=document.getElementById("mi");im.className="";im.src=TK[i];document.getElementById("mt").textContent="🎫 "+l.ti+" · "+dy(l.d)+" · PNR "+l.pnr;document.getElementById("md").className="md on"}
+function closeT(){document.getElementById("md").className="md"}
+document.getElementById("mc").onclick=closeT;
+document.getElementById("mi").onclick=function(){this.classList.toggle("z")};
+document.addEventListener("keydown",function(e){if(e.key=="Escape")closeT()});
+render();setInterval(render,1000);
+</script></body></html>
